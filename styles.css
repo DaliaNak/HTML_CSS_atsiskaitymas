@@ -915,7 +915,7 @@ input:focus {
   .heading-title {
     width: 100%;
     font-size: 4.1rem;
-    padding-bottom: ;
+    /* padding-bottom: 1.3rem; */
   }
 }
 
@@ -927,7 +927,7 @@ input:focus {
   }
 
   footer {
-    padding-left: 1.8em;
+    padding-left: 1.8rem;
     padding-right: 1.8rem;
     padding-bottom: 2rem;
   }
@@ -1170,13 +1170,13 @@ input:focus {
 
 @media screen and (min-width: 1400px) {
   .container {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .heading-title {
     width: 100%;
-    font-size: 8rem;
+    font-size: 6.2rem;
     line-height: 1.1;
     padding-top: 2rem;
     padding-bottom: 1.5rem;
@@ -1186,16 +1186,25 @@ input:focus {
     height: 90px;
   }
 
+  footer {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .logo-wrapper {
     font-size: 1.8rem;
   }
 
+  .header-links-wrapper nav ul {
+    gap: 2.5rem;
+  }
+
   .about-us-title h2 {
-    font-size: 5.4rem;
+    font-size: 4.3rem;
   }
 
   .main-image-wrapper img {
-    height: 800px;
+    height: 650px;
   }
 
   .about-us {
@@ -1208,28 +1217,28 @@ input:focus {
   }
 
   .illustration-image img {
-    height: 870px;
+    height: 800px;
     object-fit: cover;
   }
 
   .product-image img {
     width: 100%;
-    height: 580px;
+    height: 500px;
   }
 
   .collar-product-section {
-    padding-top: 8rem;
+    padding-top: 5rem;
     padding-bottom: 5rem;
   }
 
   .product-card-wrapper img {
     width: 97%;
-    height: 520px;
+    height: 470px;
     object-fit: cover;
   }
 
   .product-gallery-container {
-    height: 910px;
+    height: 860px;
     padding-left: 3rem;
     padding-right: 4rem;
     padding-top: 0;
@@ -1250,14 +1259,15 @@ input:focus {
   .product-scroller-right-arrow-btn {
     position: absolute;
     bottom: 31rem;
+    right: 2.5rem;
   }
 
   .review-wrapper {
-    height: 90vh;
+    height: 60vh;
     justify-content: center;
   }
   .review-wrapper h2 {
-    font-size: 5rem;
+    font-size: 4.7rem;
   }
 
   .dog-icon {
@@ -1275,8 +1285,8 @@ input:focus {
   }
 
   .follow-us-container {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .follow-us-container h2 {
