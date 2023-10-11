@@ -2,7 +2,7 @@ body {
   margin: 0;
   background-color: hsl(40deg 100% 86.47%);
   min-width: 380px;
-  max-width: 1400px;
+  /* max-width: 1400px; */
   font-family: "Open Sans", sans-serif;
 }
 
@@ -22,7 +22,11 @@ header {
 footer {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  padding-top: 3rem;
+  padding-top: 4.5rem;
+}
+
+.header-links-wrapper {
+  display: none;
 }
 
 .burger-button-wrapper {
@@ -52,7 +56,6 @@ footer {
 
 .line-wrapper hr {
   width: 100%;
-  margin: 0.5rem;
   height: 1px;
   background-color: rgb(34, 34, 34);
   border: none;
@@ -83,7 +86,7 @@ footer {
 
 .main-image-wrapper img {
   width: 100%;
-  height: 230px;
+  height: 25vh;
   object-fit: cover;
   border-radius: 60px;
 }
@@ -204,8 +207,7 @@ h6 {
   object-fit: cover;
 }
 
-.product-card-wrapper h3,
-h4 {
+.product-card-wrapper h3 {
   margin: 0;
   color: rgb(34, 34, 34);
   font-size: 1.5rem;
@@ -214,14 +216,23 @@ h4 {
   padding-top: 0.8rem;
 }
 
+.product-card-wrapper h4 {
+  margin: 0;
+  color: rgb(34, 34, 34);
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding-top: 0.8rem;
+}
+
 .product-action-button {
   margin-top: 1rem;
   width: 150px;
-  height: 50px;
+  height: 45px;
   border-radius: 5px;
   padding: 0.5rem;
   color: rgb(34, 34, 34);
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 1px;
   border: 2px solid black;
@@ -245,12 +256,12 @@ h4 {
 
 .leash-card .product-action-button {
   width: 130px;
-  height: 50px;
+  height: 45px;
 }
 
 .baggie-carrier-card .product-action-button {
   width: 200px;
-  height: 50px;
+  height: 45px;
 }
 
 .gallery-scroller-wrapper {
@@ -282,6 +293,8 @@ h4 {
 
 .review-wrapper {
   margin: 0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   background-image: url(./images/background-image.png);
   background-position: center;
   width: 100%;
@@ -449,12 +462,12 @@ h4 {
   order: 2;
 }
 
-nav ul {
+.links-wrapper nav ul {
   all: unset;
   list-style-type: none;
 }
 
-nav ul li a {
+.links-wrapper nav ul li a {
   color: rgb(34, 34, 34);
   font-weight: 400;
   letter-spacing: 1px;
@@ -473,8 +486,8 @@ nav ul li a {
 }
 
 .sign-up-form-wrapper {
-  padding-top: 1.5rem;
-  padding-bottom: 7rem;
+  padding-top: 1rem;
+  padding-bottom: 8rem;
 }
 
 .sign-up-form-wrapper p {
@@ -482,15 +495,16 @@ nav ul li a {
   color: rgb(34, 34, 34);
   font-weight: 400;
   letter-spacing: 1px;
+  line-height: 1.4;
   font-size: 1.1rem;
 }
 
 .sign-up-form {
-  padding-top: 2rem;
+  padding-top: 1.5rem;
 }
 
 input {
-  width: 280px;
+  width: 100%;
   height: 65px;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -512,7 +526,7 @@ input:focus {
 }
 
 .sign-up-form button {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   width: 140px;
   height: 65px;
   border-radius: 5px;
@@ -550,7 +564,7 @@ input:focus {
   }
 
   .heading-title {
-    padding-bottom: 7rem;
+    padding-bottom: 5rem;
   }
 
   .about-us-title h2 {
@@ -675,17 +689,8 @@ input:focus {
     gap: 0.7rem;
   }
 
-  .sign-up-form {
-    display: flex;
-    gap: 0.5rem;
-  }
-
-  .sign-up-form button {
-    margin-top: 0;
-  }
-
   .sign-up-form-wrapper {
-    padding-bottom: 14rem;
+    padding-bottom: 10rem;
   }
 }
 
@@ -697,6 +702,8 @@ input:focus {
 
   header {
     height: 130px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   footer {
@@ -723,37 +730,39 @@ input:focus {
   .about-us {
     display: grid;
     grid-template-columns: 8fr 4fr;
-    gap: 4rem;
+    gap: 3rem;
     margin-top: 3rem;
   }
 
   .about-us-title h2 {
     max-width: 70%;
+    font-size: 2.8rem;
     line-height: 1.1;
     padding: 0;
   }
 
   .illustration-image {
     padding-top: 2rem;
-    width: 70%;
+    width: 71%;
   }
 
   .illustration-image img {
-    height: 440px;
+    height: 480px;
     object-fit: cover;
   }
 
   .product-display {
+    width: 65%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 5rem;
+    padding-bottom: 6rem;
   }
 
   .product-image img {
     width: 100%;
-    height: 230px;
+    height: 240px;
   }
 
   .collar-product-section {
@@ -763,7 +772,7 @@ input:focus {
     padding-top: 4rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-    padding-bottom: 10rem;
+    padding-bottom: 9rem;
   }
 
   .product-gallery-container {
@@ -776,8 +785,23 @@ input:focus {
 
   .product-card-wrapper img {
     width: 100%;
-    height: 300px;
+    height: 310px;
     object-fit: cover;
+  }
+
+  .review-wrapper h2 {
+    font-size: 2.8rem;
+    padding-top: 5rem;
+  }
+
+  .dog-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .review-wrapper h6 {
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
   }
 
   .review-wrapper p {
@@ -787,6 +811,10 @@ input:focus {
   .follow-us-container {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .follow-us-container h2 {
+    font-size: 2.8rem;
   }
 
   .image-gallery {
@@ -834,14 +862,446 @@ input:focus {
     gap: 1.5rem;
     padding-top: 1.5rem;
   }
+}
 
-  input {
-    width: 240px;
-    height: 65px;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+@media screen and (min-width: 800px) {
+  header {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  .header-links-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .burger-button-wrapper {
+    display: none;
+  }
+
+  .header-links-wrapper nav ul {
+    all: unset;
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .header-links-wrapper nav ul li a {
+    color: rgb(34, 34, 34);
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    text-decoration: none;
+  }
+
+  .product-card-wrapper img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 943px) {
+  .container {
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+  }
+
+  .heading-title {
+    width: 100%;
+    font-size: 4.1rem;
+    padding-bottom: ;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .heading-title {
+    width: 100%;
+    font-size: 4.3rem;
+    padding-bottom: 2rem;
+  }
+
+  footer {
+    padding-left: 1.8em;
+    padding-right: 1.8rem;
+    padding-bottom: 2rem;
+  }
+
+  .main-image-wrapper img {
+    height: 560px;
+    object-fit: cover;
+    border-radius: 60px;
+  }
+
+  .about-us-title h2 {
+    max-width: 70%;
+    font-size: 3.3rem;
+    line-height: 1.1;
+    padding: 0;
+  }
+
+  .about-us {
+    margin-top: 5rem;
+  }
+
+  .illustration-image {
+    padding-top: 2rem;
+    width: 69%;
+  }
+
+  .illustration-image img {
+    height: 540px;
+    object-fit: cover;
+  }
+
+  .product-image img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .collar-product-section {
+    padding-bottom: 7rem;
+  }
+
+  .baggie-carrier-card {
+    display: block;
+  }
+
+  .baggie-carrier-card .product-action-button {
+    width: 220px;
+    height: 45px;
+  }
+
+  .product-gallery-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+    height: 560px;
     padding-left: 2rem;
-    box-sizing: border-box;
-    border: 1px solid hsl(0, 1%, 86%);
+    padding-right: 4rem;
+    position: relative;
+  }
+
+  .product-card-wrapper img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+  }
+
+  .review-wrapper h2 {
+    font-size: 3.3rem;
+    padding-bottom: 2rem;
+  }
+
+  .dog-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .review-wrapper h6 {
+    padding-top: 2rem;
+    padding-bottom: 2.5;
+  }
+
+  .review-wrapper p {
+    padding-bottom: 3rem;
+    line-height: 1.3;
+  }
+
+  .follow-us-container {
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+  }
+
+  .follow-us-container h2 {
+    font-size: 3.3rem;
+    padding-top: 2.5rem;
+  }
+
+  .follow-us-container h6 {
+    font-size: 1.2rem;
+  }
+
+  .image-gallery img {
+    width: 100%;
+    height: 235px;
+    object-fit: cover;
+    border-radius: 40px;
+  }
+
+  .image-gallery {
+    gap: 0.7rem;
+    padding-top: 2.5rem;
+  }
+
+  .sign-up-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .footer-logo-wrapper {
+    font-size: 1.5rem;
+  }
+
+  .links-wrapper {
+    gap: 5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .heading-title {
+    width: 100%;
+    font-size: 5.2rem;
+    line-height: 1.1;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  header {
+    height: 65px;
+  }
+
+  .logo-wrapper {
+    font-size: 1.6rem;
+  }
+
+  .about-us-title h2 {
+    font-size: 4.2rem;
+  }
+
+  .illustration-image {
+    padding-top: 2rem;
+    width: 60%;
+  }
+
+  .illustration-image img {
+    height: 600px;
+    object-fit: cover;
+  }
+
+  .product-image img {
+    width: 100%;
+    height: 380px;
+  }
+
+  .collar-product-section {
+    padding-bottom: 5rem;
+  }
+
+  .product-card-wrapper img {
+    width: 97%;
+    height: 340px;
+    object-fit: cover;
+  }
+  .product-gallery-container {
+    height: 640px;
+    padding-left: 2rem;
+    padding-right: 4rem;
+    position: relative;
+  }
+
+  .product-card-wrapper h3 {
+    font-size: 1.6rem;
+  }
+
+  .review-wrapper h2 {
+    font-size: 4rem;
+    padding-bottom: 3rem;
+  }
+
+  .dog-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .review-wrapper h6 {
+    padding-top: 2.8rem;
+    padding-bottom: 2.5;
+  }
+
+  .review-wrapper p {
+    line-height: 1.4;
+  }
+
+  .follow-us-container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .follow-us-container h2 {
+    font-size: 4.5rem;
+    padding-top: 2.5rem;
+  }
+
+  .image-gallery img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 40px;
+  }
+  .footer-logo-wrapper {
+    font-size: 1.6rem;
+  }
+
+  footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .logo-and-social-links {
+    gap: 1.5rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .heading-title {
+    width: 100%;
+    font-size: 8rem;
+    line-height: 1.1;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  header {
+    height: 90px;
+  }
+
+  .logo-wrapper {
+    font-size: 1.8rem;
+  }
+
+  .about-us-title h2 {
+    font-size: 5.4rem;
+  }
+
+  .main-image-wrapper img {
+    height: 800px;
+  }
+
+  .about-us {
+    margin-top: 7rem;
+  }
+
+  .illustration-image {
+    padding-top: 2rem;
+    width: 65%;
+  }
+
+  .illustration-image img {
+    height: 870px;
+    object-fit: cover;
+  }
+
+  .product-image img {
+    width: 100%;
+    height: 580px;
+  }
+
+  .collar-product-section {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+  }
+
+  .product-card-wrapper img {
+    width: 97%;
+    height: 520px;
+    object-fit: cover;
+  }
+
+  .product-gallery-container {
+    height: 910px;
+    padding-left: 3rem;
+    padding-right: 4rem;
+    padding-top: 0;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+  }
+
+  .product-card-wrapper h3 {
+    font-size: 1.8rem;
+    padding-top: 1.5rem;
+  }
+
+  .product-card-wrapper h4 {
+    font-size: 1.5rem;
+  }
+
+  .product-scroller-right-arrow-btn {
+    position: absolute;
+    bottom: 31rem;
+  }
+
+  .review-wrapper {
+    height: 90vh;
+    justify-content: center;
+  }
+  .review-wrapper h2 {
+    font-size: 5rem;
+  }
+
+  .dog-icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .review-wrapper h6 {
+    padding-top: 2.8rem;
+    padding-bottom: 2.5;
+  }
+
+  .review-wrapper p {
+    font-size: 1.5rem;
+  }
+
+  .follow-us-container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .follow-us-container h2 {
+    font-size: 4.5rem;
+    padding-top: 3.5rem;
+  }
+
+  .image-gallery {
+    padding-top: 4rem;
+  }
+
+  .image-gallery img {
+    width: 100%;
+    height: 330px;
+  }
+
+  .sign-up-form {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sign-up-form button {
+    margin-top: 0;
   }
 }
